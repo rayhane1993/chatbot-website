@@ -157,6 +157,20 @@ this.addMessageToState(message);
 
 };
 
+handleDurée = () => {
+  const message = this.createChatBotMessage( 
+    " ** Selenium: 6 jours (30h) pendant les weekends ** Scrum Master: 3 jours (15h) en 3 jours successifs ou en weekends *** ISTQB: 5 jours / 25 heures ** Soft Skills: 2 jours (10h) **NB: Possibilité d’adaptation de cette formation en fonction des besoins des participants ",
+    {
+      widget: "Durée",
+    }
+  );
+
+
+this.addMessageToState(message);
+
+
+};
+
   
   addMessageToState = (message) => {
     this.setState((prevState) => ({

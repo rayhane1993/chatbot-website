@@ -112,6 +112,22 @@ const config = {
       },
     },
 
+    {
+      widgetName: "Durée",
+      widgetFunc: (props) => <Quiz {...props} />,
+      props: {
+        questions: [
+          {
+            question: "Pour plus d'informations cliquer ici",
+            answer:
+              "lien de la page",
+            id: 9,
+          },
+       
+        ],
+      },
+    },
+
     
 
     

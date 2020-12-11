@@ -57,6 +57,12 @@ const Options = (props) => {
       handler: props.actionProvider.handleFormateur, 
       id: 8,
     },
+
+    {
+      text: "Durée des formations",
+      handler: props.actionProvider.handleDurée, 
+      id: 9,
+    },
  
     
 
