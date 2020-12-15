@@ -31,7 +31,7 @@ class ActionProvider {
   };
 
   catalogue = () => {
-    const message5 = this.createChatBotMessage("Veuillez consulter le lien de téléchargement sur notre site : notre catalogue de formation (le catalogue en version pdf) ");
+    const message5 = this.createChatBotMessage("Veuillez consulter le lien de téléchargement sur notre site : notre catalogue de formation (le catalogue en version pdf): lien des catalogues ");
     this.addMessageToState(message5);
   };
 
@@ -93,7 +93,7 @@ class ActionProvider {
 
   handleRèglementinterne = () => {
     const message = this.createChatBotMessage(
-      "*** L’obtention de la certification n’est pas systématique *** Un retard de plus de 10 minutes n’est pas toléré *** L’assiduité des candidats est contrôlée *** Pas de remboursement en cas d’absence *** On peut planifier des sessions de formations en mode one to one mais un devis doit être négocié à l’avance *** Les horaires de formations sont flexibles si les circonstances et le planning le permettent ",
+      " *** L’obtention de la certification n’est pas systématique    \n     ****Un retard de plus de 10 minutes n’est pas toléré *** L’assiduité des candidats est contrôlée *** Pas de remboursement en cas d’absence *** On peut planifier des sessions de formations en mode one to one mais un devis doit être négocié à l’avance *** Les horaires de formations sont flexibles si les circonstances et le planning le permettent ",
       {
         widget: "Règlementinterne",
       }
@@ -131,7 +131,7 @@ class ActionProvider {
 
   handleTypesdeformation = () => {
     const message = this.createChatBotMessage( 
-      " Que des cours présentiels mais on prévoit de lanccer des cours en ligne prochainement ",
+      " Que des cours présentiels mais on prévoit de lancer des cours en ligne prochainement ",
       {
         widget: "Typesdeformation",
       }

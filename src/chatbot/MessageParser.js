@@ -31,7 +31,7 @@ class MessageParser {
       this.actionProvider.facilite();
     }
     
-    else if( testgreet(["sur quel numéro de téléphone puis-je vous joindre ?","où","ou est ce que vous vous trouvez?","localisation","place","localité","position","situation","implantation","géolocalisation","locaux"],lowercase)) {
+    else if( testgreet(["sur quel numéro de téléphone puis-je vous joindre ?","où","ou est ce que vous vous trouvez?","localisation","place","localité","position","situation","implantation","géolocalisation","locaux","locau","cordonnées","cordonnees","cordonnee","cordonnés","cordonné","gps"],lowercase)) {
       this.actionProvider.localisation();
     }
 
