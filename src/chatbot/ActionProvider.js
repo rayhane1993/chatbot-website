@@ -1,3 +1,4 @@
+
 class ActionProvider {
   constructor(createChatBotMessage, setStateFunc) {
     this.createChatBotMessage = createChatBotMessage;
@@ -16,7 +17,7 @@ class ActionProvider {
 
 
   prix = () => {
-    const message2 = this.createChatBotMessage("**ISTQB: 600dt **Selenium: 700dt **Scrum Master: 700dt **Soft skills: 700dt **RPA: coming soon");
+    const message2 = this.createChatBotMessage("**ISTQB: 600dt **Selenium: 700 dt **Scrum Master: 700 dt **Soft skills: 700 dt **RPA: coming soon");
     this.addMessageToState(message2);
   };
 
@@ -43,7 +44,7 @@ class ActionProvider {
 
   handleRechercheDeFormation = () => {
     const message = this.createChatBotMessage(
-      " Veuillez consulter la page des formations sur notre site ",
+      " Veuillez consulter la page des formations sur notre site : ",
       {
         widget: "RechercheDeFormation",
       }
@@ -55,7 +56,7 @@ class ActionProvider {
   };
   handlePacksPersonalisés = () => {
     const message = this.createChatBotMessage(
-      " Veuillez consulter la page des packs personalisés sur notre site ",
+      " Veuillez consulter la page des packs personalisés sur notre site : ",
       {
         widget: "PacksPersonalisés",
       }
@@ -68,7 +69,7 @@ class ActionProvider {
 
   handleCataloguedesFormations = () => {
     const message = this.createChatBotMessage(
-      " Veuillez consulter la page des catalogues sur notre site ",
+      " Veuillez consulter la page des catalogues sur notre site : ",
       {
         widget: "Cataloguesdesformations",
       }
@@ -80,26 +81,112 @@ class ActionProvider {
   };
   handlePrixdesFormations = () => {
     const message = this.createChatBotMessage(
-      " **ISTQB: 600dt **Selenium: 700dt **Scrum Master: 700dt **Soft skills: 700dt **RPA: coming soon ",
+      "1- ISTQB: 600 dt  ",
+      {
+        widget: "Prixdesformations",
+      }
+    );
+
+    const message1 = this.createChatBotMessage(
+      " 2- Selenium: 700 dt ",
+      {
+        widget: "Prixdesformations",
+      }
+    );
+
+    const message2 = this.createChatBotMessage(
+      "3- Scrum Master: 700 dt",
+      {
+        widget: "Prixdesformations",
+      }
+    );
+
+    const message3 = this.createChatBotMessage(
+      "4- Soft skills: 700 dt",
+      {
+        widget: "Prixdesformations",
+      }
+    );
+
+    const message4 = this.createChatBotMessage(
+      "5- RPA: coming soon",
       {
         widget: "Prixdesformations",
       }
     );
 
     this.addMessageToState(message);
-   
-    
-  };
+    this.addMessageToState(message1);
+    this.addMessageToState(message2);
+    this.addMessageToState(message3);
+    this.addMessageToState(message4);
 
+   
+  
+  };
   handleRèglementinterne = () => {
     const message = this.createChatBotMessage(
-      " *** L’obtention de la certification n’est pas systématique    \n     ****Un retard de plus de 10 minutes n’est pas toléré *** L’assiduité des candidats est contrôlée *** Pas de remboursement en cas d’absence *** On peut planifier des sessions de formations en mode one to one mais un devis doit être négocié à l’avance *** Les horaires de formations sont flexibles si les circonstances et le planning le permettent ",
-      {
+      " 1- L’obtention de la certification n’est pas systématique .",
+      { 
         widget: "Règlementinterne",
       }
+
+      
+      
+    );
+    const message1 = this.createChatBotMessage(
+      
+      "2- Un retard de plus de 10 minutes n’est pas toléré .",
+      { 
+        widget: "Règlementinterne",
+      }
+
+      
+      
+    );
+    const message2 = this.createChatBotMessage(
+      
+      "3- L’assiduité des candidats est contrôlée Pas de remboursement en cas d’absence .",
+      { 
+        widget: "Règlementinterne",
+      }
+
+      
+      
     );
 
-    this.addMessageToState(message);
+      
+    const message3 = this.createChatBotMessage(
+      
+      "4- On peut planifier des sessions de formations en mode one to one mais un devis doit être négocié à l’avance .",
+      { 
+        widget: "Règlementinterne",
+      }
+
+      
+      
+    );
+    const message4 = this.createChatBotMessage(
+      
+      "5- Les horaires de formations sont flexibles si les circonstances et le planning le permettent",
+      { 
+        widget: "Règlementinterne",
+      }
+
+      
+      
+    );
+
+    
+
+
+   this.addMessageToState(message);
+   setTimeout(2000);
+   this.addMessageToState(message1);
+   this.addMessageToState(message2);
+   this.addMessageToState(message3);
+   this.addMessageToState(message4);
+  
    
     
   };
@@ -117,7 +204,7 @@ class ActionProvider {
   }
     handleAutres = () => {
       const message = this.createChatBotMessage( 
-        " Merci de spécifier votre demande à l'adresse suivante: contact@goldshard.fr ou appelez-nous au numéro (54 754 033) ",
+        " Merci de spécifier votre demande à l'adresse suivante : contact@goldshard.fr ou appelez-nous au numéro (54 754 033) ",
         {
           widget: "Autres",
         }
@@ -145,7 +232,7 @@ class ActionProvider {
 
 handleFormateur = () => {
   const message = this.createChatBotMessage( 
-    " Veuillez envoyer votre CV à l'adresse suivante: contact@goldshard.fr ",
+    " Veuillez envoyer votre CV à l'adresse suivante : contact@goldshard.fr ",
     {
       widget: "Formateur",
     }
@@ -159,7 +246,34 @@ this.addMessageToState(message);
 
 handleDurée = () => {
   const message = this.createChatBotMessage( 
-    " ** Selenium: 6 jours (30h) pendant les weekends ** Scrum Master: 3 jours (15h) en 3 jours successifs ou en weekends *** ISTQB: 5 jours / 25 heures ** Soft Skills: 2 jours (10h) **NB: Possibilité d’adaptation de cette formation en fonction des besoins des participants ",
+    " 1- Selenium : 6 jours (30h) pendant les weekends ." ,
+    {
+      widget: "Durée",
+    }
+  );
+
+  const message2 = this.createChatBotMessage( 
+    " 2- Scrum Master : 3 jours (15h) en 3 jours successifs ou en weekends .",
+    {
+      widget: "Durée",
+    }
+  );
+
+  const message3 = this.createChatBotMessage( 
+    " 3- ISTQB : 5 jours / 25 heures .",
+    {
+      widget: "Durée",
+    }
+  );
+
+  const message4 = this.createChatBotMessage( 
+    " 4- Soft Skills : 2 jours (10h) .",
+    {
+      widget: "Durée",
+    }
+  );
+  const message5 = this.createChatBotMessage( 
+    "**NB : Possibilité d’adaptation de cette formation en fonction des besoins des participants . ",
     {
       widget: "Durée",
     }
@@ -167,6 +281,12 @@ handleDurée = () => {
 
 
 this.addMessageToState(message);
+this.addMessageToState(message2);
+this.addMessageToState(message3);
+this.addMessageToState(message4);
+this.addMessageToState(message5);
+
+
 
 
 };

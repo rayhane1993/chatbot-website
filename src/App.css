@@ -1,9 +1,31 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: #181629d7;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.openbot{
+  color: #ffffff!important;
+  border-width: 0px!important;
+  border-radius: 0px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif!important;
+  font-weight: 600!important;
+  text-transform: uppercase!important;
+  background-color: #2679e6;
+  padding-top: 12px!important;
+  padding-right: 28px!important;
+  padding-bottom: 12px!important;
+  padding-left: 28px!important;
+}
 
+.wrapper {
+  width: 128%;
+  height: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

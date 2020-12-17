@@ -5,7 +5,7 @@ import Options from "../components/Options/Options";
 import Quiz from "../components/Quiz/Quiz";
 
 const config = {
-  botName: "Goldshard Academy Bot",
+  botName: "GOLD SHARD Academy Bot",
   initialMessages: [
     createChatBotMessage(`Bonjour, Comment puis-je vous aider ? `, {
       widget: "options",
@@ -65,7 +65,7 @@ const config = {
       },
     },
 
-    {
+   /* {
       widgetName: "Prixdesformations",
       widgetFunc: (props) => <Quiz {...props} />,
       props: {
@@ -79,9 +79,9 @@ const config = {
        
         ],
       },
-    },
+    },*/
     
-    {
+ /*  {
       widgetName: "Règlementinterne",
       widgetFunc: (props) => <Quiz {...props} />,
       props: {
@@ -95,7 +95,7 @@ const config = {
        
         ],
       },
-    },
+    },*/
     {
       widgetName: "Nospartenaires",
       widgetFunc: (props) => <Quiz {...props} />,
@@ -112,7 +112,7 @@ const config = {
       },
     },
 
-    {
+    /*{
       widgetName: "Durée",
       widgetFunc: (props) => <Quiz {...props} />,
       props: {
@@ -126,7 +126,7 @@ const config = {
        
         ],
       },
-    },
+    },*/
 
     
 
